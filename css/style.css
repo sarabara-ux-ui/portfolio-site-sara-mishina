@@ -1,0 +1,90 @@
+/* 
+colors used:
+primary (teal) #00B4B4 (0,180,180)
+secodary (pink) #F991AD (249,145, 173)
+
+primary darker  #008282 (0,130,130)
+secondary dark  #F33A6D (243, 58, 109)
+*/
+
+<style>
+			code {
+				color:teal rgb(0,180,180);
+				background-color: pink rgb (249,245,173);
+            }
+            img {
+                width: 100%;
+                }
+                body {
+                    background-color: #ffffff;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 16px; /* Sets the font size to 16px */
+                    font-weight: 300; /* Sets the font weight to 300 */
+                    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+                    color: #4a4a4a;
+                    }
+                    h1, h2, h3, h4 {
+                    line-height: 1.4;
+                    }
+                    h1 {
+                    font-size: 2.75em;
+                    font-weight: 700;
+                    }
+                    h2 {
+                    font-size: 2.25em;
+                    font-weight: 700;
+                    }
+                    h3 {
+                    font-size: 1.75em;
+                    font-weight: 400;
+                    }
+                    h4 {
+                    font-size: 1.35em;
+                    font-weight: 400;
+                    }
+                    a {
+                        color: #00B4B4;
+                        text-decoration: none; /* No underlining */
+                        }
+                    a:hover {
+                        color:#008282;
+                        text-decoration: underline; /* Underlining when hovering over a link */
+                        }
+                        a:visited { /* visited link */
+                            color: #008282;
+                            }
+                          a:active { /* selected link */
+                            color: #F33A6D;
+                            }
+                    a:hover,
+                    a:focus {
+                            color:#008282;
+                            text-decoration: underline;
+                            }
+                    .button {
+                                display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+                                background-color: #00B4B4;
+                                color: #ffffff; /* needed to override the default link color */
+                                font-weight: 400;
+                                padding: 10px;
+                                border-radius: 3px;
+                                border-bottom: 2px solid #008282; /* width of the border, type, color */
+                                transition: 0.2s opacity;
+                            }
+                    .button:hover {
+                                opacity: 0.7; /* Reduces the opacity of the button to 70% */
+                                text-decoration: none;
+                                }
+                    .button.contact {
+                                background-color: #ffffff;
+                                color: #00B4B4;
+                                text-transform: uppercase;
+                                border: 2px solid #00B4B4;
+                            }
+                    .button.contact:hover {
+                                background-color: #00B4B4;
+                                color: #ffffff;
+                            }
+</style>
+
+
