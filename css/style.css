@@ -68,7 +68,7 @@ secondary dark  #F33A6D (243, 58, 109)
                                 font-weight: 400;
                                 padding: 10px;
                                 border-radius: 3px;
-                                border-bottom: 2px solid #008282; /* width of the border, type, color */
+                                border-bottom: 2px solid #ffffff; /* width of the border, type, color */
                                 transition: 0.2s opacity;
                             }
                     .button:hover {
