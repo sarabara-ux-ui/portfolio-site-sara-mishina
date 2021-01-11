@@ -7,10 +7,10 @@ primary darker  #008282 (0,130,130)
 secondary dark  #F33A6D (243, 58, 109)
 */
 
-<style>
+
 			code {
-				color:teal rgb(0,180,180);
-				background-color: pink rgb (249,245,173);
+				color:#00B4B4;
+				background-color: #ffffff;
             }
             img {
                 width: 100%;
@@ -85,6 +85,6 @@ secondary dark  #F33A6D (243, 58, 109)
                                 background-color: #00B4B4;
                                 color: #ffffff;
                             }
-</style>
+
 
 
