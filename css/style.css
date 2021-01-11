@@ -112,6 +112,7 @@ secondary dark  #F33A6D (243, 58, 109)
 
                 /*header*/
                 header {
+                    position: fixed;
                     background-color: #fffff;
                     text-align: center;
                     padding: 10px 0;
@@ -129,8 +130,6 @@ secondary dark  #F33A6D (243, 58, 109)
                     font-weight: 700;
                     color: #4a4a4a;
                 }
-                #header {
-                    position: fixed;
-                }
+            
 
 
