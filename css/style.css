@@ -15,6 +15,9 @@ secondary dark  #F33A6D (243, 58, 109)
             img {
                 width: 100%;
                 }
+                * {
+                    box-sizing: border-box;
+                }
                 body {
                     background-color: #ffffff;
                     font-family: 'Lato', sans-serif;
@@ -85,6 +88,49 @@ secondary dark  #F33A6D (243, 58, 109)
                                 background-color: #00B4B4;
                                 color: #ffffff;
                             }
+                /* Layout styling */
+                .container {
+                    padding: 0 15px;
+                }
+                .row {
+                    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+                }
+                        
+                #hero h1 {
+                    text-align: center; /* Centers text */
+                }
+                .logo {
+                    max-width: 250px;
+                }
+                .behance {
+                    max-width: 75px;
+                }
+                .linkedin {
+                    max-width: 75px;
+                }
 
+
+                /*header*/
+                header {
+                    background-color: #fffff;
+                    text-align: center;
+                    padding: 10px 0;
+                }
+                nav > ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+                nav > ul > li {
+                    display: inline-block;
+                }
+                nav > ul > li > a {
+                    padding: 0 15px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #4a4a4a;
+                }
+                #header {
+                    position: fixed;
+                }
 
 
