@@ -134,18 +134,39 @@ secondary dark  #F33A6D (243, 58, 109)
             /*mediium screen*/
             @media only screen and (min-width: 640px) {
                 header {
-                text-align: unset;
-                padding: 20px 0 13px;
-                }
+                    text-align: unset;
+                    padding: 20px 0 13px;}
                 nav {
-                width: auto;
-                float: right
-                margin-top: 4px;
-                }
+                    width: auto;
+                    float: right;
+                    margin-top: 4px;}
+                body {font-size: 18px;}   
+                #hero {text-align:center;} 
+                #hero span {display: block;}
+                .col-md-6 {width: 50%;}
+                        [class*="col-"] {float: left;
+                                padding: 10px}
+                .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;}
             }
+
             /*large screen*/
-            @media only screen and (min-width: 1024px) {
-            }
+            @media only screen and (min-width: 1024px)
+                {.col-lg-7 {width: 58.3%;}
+                        [class*="col-"] {float: left;
+                        padding: 10px}
+                .col-lg-5 {width: 41.6% }
+                .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;}
+                .container 
+                    {max-width: 1200px;
+                    margin-left: auto;
+                    margin-right: auto; }
+                }
             /*X-large screen*/
             @media only screen and (min-width: 1440px) {
             }
