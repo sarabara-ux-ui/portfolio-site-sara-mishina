@@ -146,7 +146,7 @@ secondary dark  #F33A6D (243, 58, 109)
                     }
                 nav {
                     width: auto;
-                    float: right
+                    float: right;
                     margin-top: 4px;
                 }
                 body {font-size: 18px;}   
