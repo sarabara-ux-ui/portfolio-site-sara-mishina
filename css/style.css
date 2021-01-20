@@ -113,34 +113,42 @@ secondary dark  #F33A6D (243, 58, 109)
 
                 /*header*/
                 header {
+                    text-align: unset;
                     position: fixed; 
                     background-color: #ffffff;
-                    text-align: center;
                     padding: 10px 0; 
+                    width: 100%
                 }
                 nav > ul {
                     list-style-type: none;
                     padding: 0;
+                    text-align: unset;
+                    
                 }
                 nav > ul > li {
                     display: inline-block;
+                    text-align: unset;
+                    
                 }
                 nav > ul > li > a {
                     padding: 0 15px;
                     text-transform: uppercase;
                     font-weight: 700;
                     color: #4a4a4a;
+                    text-align: unset;
                 }
             /*media queries*/
             /*mediium screen*/
             @media only screen and (min-width: 640px) {
                 header {
                     text-align: unset;
-                    padding: 20px 0 13px;}
+                    padding: 20px 0 13px;
+                    }
                 nav {
                     width: auto;
-                    float: right;
-                    margin-top: 4px;}
+                    float: right
+                    margin-top: 4px;
+                }
                 body {font-size: 18px;}   
                 #hero {text-align:center;} 
                 #hero span {display: block;}
