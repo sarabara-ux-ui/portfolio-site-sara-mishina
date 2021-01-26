@@ -106,9 +106,11 @@ secondary dark  #F33A6D (243, 58, 109)
                 }
                 .behance {
                     max-width: 75px;
+                    height:auto;
                 }
                 .linkedin {
                     max-width: 75px;
+                    height: auto;
                 }
 
 
