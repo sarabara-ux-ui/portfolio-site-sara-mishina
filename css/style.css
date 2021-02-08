@@ -115,43 +115,48 @@ secondary dark  #F33A6D (243, 58, 109)
 
 
                 /*header*/
+                
                 header {
-                    position: fixed; 
                     background-color: #ffffff;
-                    padding: 10px 0 4px; 
-                    width: 100%
+                    text-align: center;
+                    padding: 10px 0;
+                }
+                .logo {
+                    max-width: 150px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 2.5em;
+                }
+                nav {
+                    display: inline-block;
+                    width: 100%;
                 }
                 nav > ul {
                     list-style-type: none;
                     padding: 0;
-                    margin: 0;
-                    text-align: unset;
-                    
+                }
+                nav > ul > li {
+                    display: inline-block;
+                    list-style-type: none;
+                    padding: 0;
                 }
                 nav > ul > li > a {
+                    display: inline-block;
                     padding: 0 15px;
+                    color: #000000;
                     text-transform: uppercase;
-                    font-weight: 700;
-                    color: #4a4a4a;
-                    text-align: unset;
-                }
-                .navtoggle li:not(:last-child) {
-                    display: none;
+                    text-decoration: none;
                 }
                 .navtoggle, .navtoggle.responsive {
                     position: relative;
                 }
+                  /* our hamburger menu */
                 .navtoggle li .icon {
                     position: absolute;
                     right: 0;
                     top: 2px;
                     font-size: 20px;
-                    padding-right: 0;
                 }
-                .navtoggle.responsive li  {
-                    display: block;
-                }
-
                 .navtoggle.responsive nav {
                     padding: 24px 0 0;
                 }
@@ -160,96 +165,48 @@ secondary dark  #F33A6D (243, 58, 109)
                     padding: 10px 0;
                     border-top: 1px solid rgba(255,127,80,0.5);
                 }
-                
-                .navtoggle.responsive li:last-child  {
+                .navtoggle.responsive li:last-child {
                     padding: 0 0 10px;
                 }
-                
-            /*media queries*/
-            /*small screen*/
-            @media only screen and (max-width: 640px) {
-                header {
-                    text-align: unset;
-                    padding: 20px 0 13px;
-                    }
-                nav {
-                        width: auto;
-                        float: right;
-                        margin-top: 4px;
-                    }
-                body {font-size: 18px;}   
-                #hero {text-align:center;} 
-                #hero span {display: block;}
-                .col-md-6 {width: 50%;}
-                            [class*="col-"] {float: left;
-                                    padding: 10px}
-                .row::after {
-                        content: '';
-                        clear: both;
-                        display: table;}
-                .logo {
-                            max-width: 250px;
-                            display: inline-block;
-                        }
                 .navtoggle li:not(:last-child) {
-                            display: none;
-                    }
-                .navtoggle li .icon {
-                        position: absolute;
-                        right: 0;
-                        top: 2px;
-                        font-size: 20px;
-                    }
+                    display: none;
                 }
+                .navtoggle.responsive li:not(:last-child) {
+                    display: block;
+                }
+                    
 
-            /*medium screen*/
-            @media only screen and (min-width: 641px) {
-                header {
+
+                
+                  /* === Medium Devices (641px and larger) === */
+                @media only screen and (min-width: 641px) {
+                    header {
                     text-align: unset;
                     padding: 20px 0 13px;
                     }
-                nav {
+                    nav {
                     width: auto;
                     float: right;
                     margin-top: 4px;
-                }
-                body {font-size: 18px;}   
-                #hero {text-align:center;} 
-                #hero span {display: block;}
-                .col-md-6 {width: 50%;}
-                        [class*="col-"] {float: left;
-                                padding: 10px}
-                .row::after {
-                    content: '';
-                    clear: both;
-                    display: table;}
-
-                .navtoggle li:not(:last-child) {
-                        display: none;
-                }
-                .navtoggle li .icon {
-                    position: absolute;
-                    right: 0;
-                    top: 2px;
-                    font-size: 20px;
-                }
-                nav > ul > li {
+                    }
+                
+                    nav > ul > li {
                     display: inline-block;
-                }
-                .navtoggle li:not(:last-child) {
+                    position: relative;
+                    }
+                    .navtoggle li:not(:last-child) {
                     display: inline-block;
-                }
+                    }
+                
                 .navtoggle li:last-child {
-                    display: none;
-                }
-                nav > ul {
-                margin: 1em 0;
-                }
-            }
+                display: none;
+                    }
+                }   
 
             /*large screen*/
             @media only screen and (min-width: 1024px)
-                {.col-lg-7 {width: 58.3%;}
+                {
+                .col-lg-7 {width: 58.3%;}
                         [class*="col-"] {float: left;
                         padding: 10px}
                 .col-lg-5 {width: 41.6% }
@@ -270,7 +227,7 @@ secondary dark  #F33A6D (243, 58, 109)
                 }
                 .navtoggle li:last-child {
                     display: none;
-                 }
+                }
                 }
             /*X-large screen*/
             @media only screen and (min-width: 1440px) {
